@@ -1,0 +1,8 @@
+<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>Device drill B</title>
+<style>body{font-family:system-ui,sans-serif;margin:0}header{display:flex;justify-content:space-between;align-items:center;padding:12px 16px;background:#eee}
+.links a{margin-left:12px}#menu{display:none}main{padding:16px;max-width:600px}label{display:block;margin-top:8px}input{width:100%;max-width:280px;box-sizing:border-box;padding:6px}
+@media (max-width:599px){.links{display:none}.links.open{display:block}#menu{display:inline-block}}
+</style></head>
+<body><header><strong>Device drill B</strong><button id="menu" aria-expanded="false" aria-controls="nav">Menu</button>
+<nav id="nav" class="links"><a href="./index.html">Home</a><a href="./about.html">About</a></nav></header><main><h1>Contact</h1><form action="#" method="post"><label for="n">Name</label><input id="n" name="name"><label for="e">Email</label><input id="e" name="email" type="email" required><p><button type="submit">Send</button></p></form></main>
+<script>document.getElementById('menu').addEventListener('click',function(){var n=document.getElementById('nav');n.classList.toggle('open');this.setAttribute('aria-expanded',n.classList.contains('open'));});</script></body></html>
